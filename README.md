@@ -28,5 +28,4 @@ Tree-based ML models insensitive to feature scales:
 - Gradient Boosted Trees
 
 ### Example Models:
-1. Predicting the Sale Price of Houses
-2. 
+1. Predicting the Sale Price of Houses (dataset from Kaggle (https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
