@@ -36,7 +36,7 @@ price_pipe = Pipeline(
     [
         ('categorical_imputer',
          pp.CategoricalImputer(variables=CATEGORICAL_VARS_WITH_NA)),
-                 ('numerical_inputer',
+        ('numerical_inputer',
             pp.NumericalImputer(variables=NUMERICAL_VARS_WITH_NA)),
         ('temporal_variable',
             pp.TemporalVariableEstimator(

@@ -8,7 +8,7 @@ from sklearn.externals import joblib
 import pipeline
 
 PACKAGE_ROOT = pathlib.Path(__file__).resolve().parent
-TRAINED_MODEL_DIR = PACKAGE_ROOT / ' trained_models'
+TRAINED_MODEL_DIR = PACKAGE_ROOT / 'trained_models'
 DATASET_DIR = PACKAGE_ROOT / 'datasets'
 
 TESTING_DATA_FILE = DATASET_DIR / 'test.csv'
@@ -26,7 +26,7 @@ FEATURES = ['MSSubClass', 'MSZoning', 'Neighborhood', 'OverallQual',
             'YrSold']
 
 
-def save_pipeline() -> None:
+def save_pipeline(*, pipeline_to_persist) -> None:
   """Persist the pipeline"""
 
   save_file_name = 'regression_model.pkl'
