@@ -128,5 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Ignore th data file
-/data/
+.vscode/
