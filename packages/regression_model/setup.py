@@ -11,9 +11,9 @@ from setuptools import find_packages, setup
 # Package meta-data.
 NAME = 'regression_model'
 DESCRIPTION = 'Train and deploy regression model.'
-URL = 'your github project'
-EMAIL = 'your_email@email.com'
-AUTHOR = 'Your name'
+URL = 'https://github.com/ngilmore/ml_model_deployment'
+EMAIL = 'neal.gilmore@gmail.com'
+AUTHOR = 'Neal Gilmore'
 REQUIRES_PYTHON = '>=3.6.0'
 
 
