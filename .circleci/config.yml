@@ -56,7 +56,7 @@ jobs:
             . venv/bin/activate
             pip install --upgrade pip
             pip install -r packages/ml_api/requirements.txt
-            PYTHONPATH=./packages/ml_api:./packages/regression_model python
+            PYTHONPATH=./packages/ml_api
             py.test -vv packages/ml_api/tests
       - save_cache:
           key: py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
@@ -94,8 +94,8 @@ workflows:
       - train_and_upload_regression_model:
           requires:
             - test_regression_model
-            - test_ml_api
-          # filters:
-          #   branches:
-          #     only:
-          #       - master
+            #- test_ml_api
+          filters:
+            branches:
+              only:
+                - master
