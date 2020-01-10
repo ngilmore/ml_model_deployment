@@ -41,4 +41,4 @@ else
     ls -d */ | while read dir; do
         build $dir
     done
-fi 
+fi
