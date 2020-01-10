@@ -44,3 +44,4 @@ echo $PYTHONPATH
 
 # run configuration tests
 $ pytest packages/ml_api/tests/ -W ignore::DeprecationWarning
+
