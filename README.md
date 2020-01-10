@@ -29,3 +29,8 @@ Tree-based ML models insensitive to feature scales:
 
 ### Example Models:
 1. Predicting the Sale Price of Houses (dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data))
+
+
+### Basic Architecture Design
+![Basic Architecture Design](/images/basic_architecture.png)
+
