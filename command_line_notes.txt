@@ -1,0 +1,29 @@
+# create virtual environment in root directory of the project
+$ python -m venv env 
+
+# activate the virtual environment
+$ source env/bin/activate
+
+# install initial requirements.txt
+$ pip install -r requirements.txt
+
+# ensure PYTHONPATH is set correctly in ~/.bash_profile
+$ code ~/.bash_profile
+export PYTHONPATH="~/Documents/_projects/ml_model_deployment/packages/regression_model"
+echo $PYTHONPATH
+
+
+# run model tests
+$ pytest packages/regression_model/tests/ -W ignore::DeprecationWarning
+
+# install regression model requirements.txt
+$ pip install -r packages/regression_model/regression_model/requirements.txt
+
+# build the package (source distribution and wheel distribution)
+$ setup.py sdist bdist_wheel
+
+# install model locally
+$ pip install -e packages/regression_model
+
+# train model
+$ python packages/regression_model/regression_model/train_pipeline.py
