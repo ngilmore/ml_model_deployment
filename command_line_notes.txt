@@ -31,6 +31,16 @@ $ python packages/regression_model/regression_model/train_pipeline.py
 # Flask application
 $ pip install -r packages/ml_api/requirements.txt
 
+# run Flask app
 $ cd packages/ml_api
 $ set FLASK_APP=run.py
 $ python run.py
+
+# ensure PYTHONPATH is set correctly in ~/.bash_profile
+$ code ~/.bash_profile
+export PYTHONPATH="~/Documents/_projects/ml_model_deployment/packages/ml_api"
+echo $PYTHONPATH
+
+
+# run configuration tests
+$ pytest packages/ml_api/tests/ -W ignore::DeprecationWarning
