@@ -1,4 +1,4 @@
-# ml_model_deployment
+# Deploying Machine Learning Models
 Repo of repeatable ML model pipeline development and deployment
 
 ## Machine Learning Pipeline: Overview
