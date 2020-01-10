@@ -133,3 +133,10 @@ dmypy.json
 # datafiles
 train.csv
 test.csv
+test_data_predictions.csv
+
+# all logs
+logs/
+
+# trained models (will be created in CI)
+packages/regression_model/regression_model/trained_models/*.pkl
