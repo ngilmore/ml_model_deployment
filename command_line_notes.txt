@@ -20,7 +20,7 @@ $ pytest packages/regression_model/tests/ -W ignore::DeprecationWarning
 $ pip install -r packages/regression_model/requirements.txt
 
 # build the package (source distribution and wheel distribution)
-$ setup.py sdist bdist_wheel
+$ python packages/regression_model/setup.py sdist bdist_wheel
 
 # install model locally
 $ pip install -e packages/regression_model
