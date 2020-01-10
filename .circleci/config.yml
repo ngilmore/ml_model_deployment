@@ -86,23 +86,23 @@ jobs:
             chmod +x ./scripts/publish_model.sh
             ./scripts/publish_model.sh ./packages/regression_model/
 
-differential_tests:
-  <<: *defaults
-  steps:
-    - checkout
-    - *prepare_venv
-    - run:
-        name: Capturing previous model predictions
-        command: |
-          . venv/bin/activate
-          pip install -r packages/ml_api/diff_test_requirements.txt
-          PYTHONPATH=./packages/ml_api python3 packages/ml_api/tests/capture_model_predictions.py
-    - run:
-        name: Runnning differential tests
-        command: |
-          . venv/bin/activate
-          pip install -r packages/ml_api/requirements.txt
-          py.test -vv packages/ml_api/tests -m differential
+  differential_tests:
+    <<: *defaults
+    steps:
+      - checkout
+      - *prepare_venv
+      - run:
+          name: Capturing previous model predictions
+          command: |
+            . venv/bin/activate
+            pip install -r packages/ml_api/diff_test_requirements.txt
+            PYTHONPATH=./packages/ml_api python3 packages/ml_api/tests/capture_model_predictions.py
+      - run:
+          name: Runnning differential tests
+          command: |
+            . venv/bin/activate
+            pip install -r packages/ml_api/requirements.txt
+            py.test -vv packages/ml_api/tests -m differential
 
 workflows:
   version: 2
