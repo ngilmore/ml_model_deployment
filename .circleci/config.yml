@@ -110,12 +110,12 @@ workflows:
     jobs:
       - test_regression_model
       #- test_ml_api
-      - differential_tests
+      #- differential_tests
       - train_and_upload_regression_model:
           requires:
             - test_regression_model
             #- test_ml_api
-            - differential_tests
+            #- differential_tests
           filters:
             branches:
               only:
