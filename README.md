@@ -5,6 +5,7 @@ Repo of repeatable ML model pipeline development and deployment.
 
 ### Basic Architecture Design
 High level overview of the architecture and tools being used for each phase / environment.
+
 ![Basic Architecture Design](/images/basic_architecture.png)
 
 ### Steps:
