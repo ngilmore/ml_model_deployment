@@ -17,7 +17,7 @@ echo $PYTHONPATH
 $ pytest packages/regression_model/tests/ -W ignore::DeprecationWarning
 
 # install regression model requirements.txt
-$ pip install -r packages/regression_model/regression_model/requirements.txt
+$ pip install -r packages/regression_model/requirements.txt
 
 # build the package (source distribution and wheel distribution)
 $ setup.py sdist bdist_wheel
