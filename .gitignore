@@ -129,3 +129,7 @@ dmypy.json
 .pyre/
 
 .vscode/
+
+# datafiles
+train.csv
+test.csv
