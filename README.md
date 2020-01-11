@@ -8,6 +8,9 @@ High level overview of the architecture and tools being used for each phase / en
 
 ![Basic Architecture Design](/images/basic_architecture.png)
 
+[![CircleCI](https://circleci.com/gh/ngilmore/ml_model_deployment.svg?style=svg)](https://circleci.com/gh/ngilmore/ml_model_deployment)
+
+
 ### Steps:
 1. **Data Gathering**
 2. **Data Analysis**
