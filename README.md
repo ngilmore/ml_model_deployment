@@ -7,6 +7,7 @@ Repo of repeatable ML model pipeline development and deployment.
 [![made-with-jupyter](https://img.shields.io/badge/Built%20with-Jupyter-1f425f.svg)](https://www.python.org/)
 [![made-with-vscode](https://img.shields.io/badge/Built%20with-VS%20Code-1f425f.svg)](https://www.python.org/)
 [![made-with-docker](https://img.shields.io/badge/Built%20with-Docker-1f425f.svg)](https://www.python.org/)
+
 [![deployed-on-heroku](https://img.shields.io/badge/Deployed%20on-Heroku-1f425f.svg)](https://www.python.org/)
 [![deployed-on-aws](https://img.shields.io/badge/Deployed%20on-AWS-1f425f.svg)](https://www.python.org/)
 
