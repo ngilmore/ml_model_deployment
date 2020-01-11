@@ -57,7 +57,7 @@ Tree-based ML models insensitive to feature scales:
 
 TODO: Build Docker container with ml model
 
-TODO: Deploy Docker container to Heroku
+TODO: Deploy Docker container to Heroku - requires a plan upgrade on Heroku to allow for Docker Layer caching
 
 TODO: Deploy Docker container to AWS
 
