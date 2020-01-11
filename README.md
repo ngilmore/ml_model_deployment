@@ -9,6 +9,7 @@ Repo of repeatable ML model pipeline development and deployment.
 [![made-with-docker](https://img.shields.io/badge/Built%20with-Docker-1f425f.svg)](https://www.python.org/)
 [![deployed-on-heroku](https://img.shields.io/badge/Deployed%20on-Heroku-1f425f.svg)](https://www.python.org/)
 [![deployed-on-aws](https://img.shields.io/badge/Deployed%20on-AWS-1f425f.svg)](https://www.python.org/)
+
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
