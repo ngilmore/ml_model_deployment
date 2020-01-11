@@ -41,7 +41,6 @@ jobs:
           command: |
             . venv/bin/activate
             py.test -vv packages/regression_model/tests
-
   test_ml_api:
     <<: *defaults
     steps:
@@ -61,7 +60,6 @@ jobs:
           key: py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
           paths:
             - "/venv"
-
   train_and_upload_regression_model:
     <<: *defaults
     steps:
@@ -84,7 +82,6 @@ jobs:
             . venv/bin/activate
             chmod +x ./scripts/publish_model.sh
             ./scripts/publish_model.sh ./packages/regression_model/
-
   differential_tests:
     <<: *defaults
     steps:
@@ -102,7 +99,6 @@ jobs:
             . venv/bin/activate
             pip install -r packages/ml_api/requirements.txt
             py.test -vv packages/ml_api/tests -m differential
-
   deploy_to_heroku:
     <<: *defaults
     steps:
@@ -111,7 +107,6 @@ jobs:
           name: Deploy to Heroku
           command: |
             git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
-
   build_and_push_to_heroku_docker:
     <<: *defaults
     steps:
@@ -148,7 +143,7 @@ workflows:
             branches:
               only:
                 - master
-      - deploy_to_heroku:
+      # - deploy_to_heroku:
       #     requires:
       #       - train_and_upload_regression_model
       #     filters:
