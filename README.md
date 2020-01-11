@@ -16,6 +16,18 @@ Repo of repeatable ML model pipeline development and deployment.
 [![CircleCI](https://circleci.com/gh/ngilmore/ml_model_deployment.svg?style=svg)](https://circleci.com/gh/ngilmore/ml_model_deployment)
 [![Heroku App Status](https://heroku-shields.herokuapp.com/lasso-reg-model)](https://lasso-reg-model.herokuapp.com/version)
 
+## Projects
+
+1. Predict the sale price of houses using Lasso regression (dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)).
+   - Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
+   - Development of deployable/scaleable model then moved to .py (VS Code) files wrapped in a Flask application with testing, versioning, and packaging for deployment and re-use. Added CI/CD through the inclusion of GitHub (source code control), GemFury (packaging), and Circleci (automated testing and deployment).
+   - Deployed to Production on [Heroku](https://lasso-reg-model.herokuapp.com/version) (PaaS) without containers automatically once CI/CD pipeline runs successfully.
+   - Dockerized the model and app for deployment to Production.
+     - TODO: Deploy model as Docker container to Heroku - requires a plan upgrade on Heroku to allow for Docker Layer caching.
+   - TODO: Deploy model as Docker container to AWS (IaaS).
+2. Differentiate weeds from crop seedlings using a convolutional neural network (CNN).
+   - TODO: Build and deploy this model.
+
 ## Machine Learning Pipeline: Overview
 
 ### Basic Architecture Design
@@ -51,15 +63,3 @@ Tree-based ML models insensitive to feature scales:
 - Classification & Regression Trees
 - Random Forests
 - Gradient Boosted Trees
-
-### Example Models
-
-1. Lasso regression to predict the sale price of houses (dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)).
-   - Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
-   - Development of deployable/scaleable model then moved to .py (VS Code) files wrapped in a Flask application with testing, versioning, and packaging for deployment and re-use. Added CI/CD through the inclusion of GitHub (source code control), GemFury (packaging), and Circleci (automated testing and deployment).
-   - Deployed to Production on [Heroku](https://lasso-reg-model.herokuapp.com/version) (PaaS) without containers automatically once CI/CD pipeline runs successfully.
-   - Dockerized the model and app for deployment to Production.
-     - TODO: Deploy model as Docker container to Heroku - requires a plan upgrade on Heroku to allow for Docker Layer caching.
-   - TODO: Deploy model as Docker container to AWS (IaaS).
-2. Convolutional neural network (CNN) to differentiate weeds from crop seedlings
-   - TODO: Build this model
