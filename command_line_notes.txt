@@ -49,11 +49,12 @@ $ pytest packages/ml_api/tests/ -W ignore::DeprecationWarning
 
 
 # Heroku
-download the Heroku CLI from www.heroku.com
+# download the Heroku CLI from www.heroku.com
 
 $ heroku login
 $ heroku git:remote -a lasso-reg-model
 $ git push heroku master
 
 # curl command to test Heroku endpoint with one record
+# download curl from curl.haxx.se 
 curl --header "Content-Type: application/json" --request POST --data @input_test.json https://lasso-reg-model.herokuapp.com/v1/predict/regression
