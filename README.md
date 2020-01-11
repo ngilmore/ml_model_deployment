@@ -8,6 +8,10 @@ High level overview of the architecture and tools being used for each phase / en
 
 ![Basic Architecture Design](/images/basic_architecture.png)
 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+
 [![CircleCI](https://circleci.com/gh/ngilmore/ml_model_deployment.svg?style=svg)](https://circleci.com/gh/ngilmore/ml_model_deployment)
 
 
