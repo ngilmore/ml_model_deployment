@@ -41,7 +41,6 @@ jobs:
           command: |
             . venv/bin/activate
             py.test -vv packages/regression_model/tests
-
   test_ml_api:
     <<: *defaults
     steps:
@@ -50,13 +49,12 @@ jobs:
           keys:
             - py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
       - run:
-          name: Running tests
+          name: Runnning tests
           command: |
             python3 -m venv venv
             . venv/bin/activate
             pip install --upgrade pip
             pip install -r packages/ml_api/requirements.txt
-            PYTHONPATH=./packages/ml_api/
             py.test -vv packages/ml_api/tests -m "not differential"
       - save_cache:
           key: py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
@@ -78,15 +76,14 @@ jobs:
           name: Train model
           command: |
             . venv/bin/activate
-            PYTHONPATH=./packages/regression_model python3 packages/regression_model/regression_model/
+            PYTHONPATH=./packages/regression_model python3 packages/regression_model/regression_model/train_pipeline.py
       - run:
           name: Publish model to Gemfury
           command: |
             . venv/bin/activate
             chmod +x ./scripts/publish_model.sh
             ./scripts/publish_model.sh ./packages/regression_model/
-
-  differential_tests:
+  section_9_differential_tests:
     <<: *defaults
     steps:
       - checkout
@@ -103,19 +100,18 @@ jobs:
             . venv/bin/activate
             pip install -r packages/ml_api/requirements.txt
             py.test -vv packages/ml_api/tests -m differential
-
 workflows:
   version: 2
   test-all:
     jobs:
       - test_regression_model
-      #- test_ml_api
-      #- differential_tests
+      - test_ml_api
+      - section_9_differential_tests
       - train_and_upload_regression_model:
           requires:
             - test_regression_model
-            #- test_ml_api
-            #- differential_tests
+            - test_ml_api
+            - section_9_differential_tests
           filters:
             branches:
               only:

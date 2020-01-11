@@ -45,3 +45,5 @@ echo $PYTHONPATH
 # run configuration tests
 $ pytest packages/ml_api/tests/ -W ignore::DeprecationWarning
 
+
+$ pip install -r packages/ml_api/diff_test_requirements.txt
