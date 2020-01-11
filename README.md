@@ -20,7 +20,7 @@ Repo of repeatable ML model pipeline development and deployment.
 
 1. Predict the sale price of houses using Lasso regression (dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)).
    - Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
-   - Development of deployable/scaleable model then moved to .py (VS Code) files wrapped in a Flask application with testing, versioning, and packaging for deployment and re-use. Added CI/CD through the inclusion of GitHub (source code control), GemFury (packaging), and Circleci (automated testing and deployment).
+   - Development of deployable/scaleable model then moved to .py (VS Code) files. Wrapped model in a Flask application with testing, versioning, and packaging for deployment and re-use. Added CI/CD through the inclusion of GitHub (source code control), GemFury (packaging), and Circleci (automated testing and deployment).
    - Deployed to Production on [Heroku](https://lasso-reg-model.herokuapp.com/version) (PaaS) without containers automatically once CI/CD pipeline runs successfully.
    - Dockerized the model and app for deployment to Production.
      - TODO: Deploy model as Docker container to Heroku - requires a plan upgrade on Heroku to allow for Docker Layer caching.
@@ -32,7 +32,7 @@ Repo of repeatable ML model pipeline development and deployment.
 
 ### Basic Architecture Design
 
-High level overview of the architecture and tools being used for each phase / environment.
+High level overview of the architecture and tools used for each phase / environment.
 
 ![Basic Architecture Design](/images/basic_architecture.png)
 
