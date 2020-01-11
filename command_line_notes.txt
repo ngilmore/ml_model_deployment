@@ -57,4 +57,4 @@ $ git push heroku master
 
 # curl command to test Heroku endpoint with one record
 # download curl from curl.haxx.se 
-curl --header "Content-Type: application/json" --request POST --data @input_test.json https://lasso-reg-model.herokuapp.com/v1/predict/regression
+curl --header "Content-Type: application/json" --request POST --data @input_test.json https://lasso-reg-model.herokuapp.com//v1/predict/regression
