@@ -8,6 +8,7 @@ Repo of repeatable ML model pipeline development and deployment.
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 [![CircleCI](https://circleci.com/gh/ngilmore/ml_model_deployment.svg?style=svg)](https://circleci.com/gh/ngilmore/ml_model_deployment)
+[![Heroku App Status](https://heroku-shields.herokuapp.com/lasso-reg-model)](https://lasso-reg-model.herokuapp.com)
 
 ## Machine Learning Pipeline: Overview
 
