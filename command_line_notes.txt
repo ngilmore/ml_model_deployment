@@ -58,3 +58,10 @@ $ git push heroku master
 # curl command to test Heroku endpoint with one record
 # download curl from curl.haxx.se 
 curl --header "Content-Type: application/json" --request POST --data @input_test.json https://lasso-reg-model.herokuapp.com//v1/predict/regression
+
+# Docker
+# install Docker app locally first
+$ docker
+
+# build Docker container
+$ docker build --build-arg PIP_EXTRA_INDEX_URL=${PIP_EXTRA_INDEX_URL} -t ml_api:latest .
