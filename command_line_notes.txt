@@ -48,4 +48,12 @@ $ pytest packages/ml_api/tests/ -W ignore::DeprecationWarning
 # publish to Gemfury
 
 
-$ pip install -r packages/ml_api/diff_test_requirements.txt
+# Heroku
+download the Heroku CLI from www.heroku.com
+
+$ heroku login
+$ heroku git:remote -a lasso-reg-model
+$ git push heroku master
+
+# curl command to test Heroku endpoint with one record
+curl --header "Content-Type: application/json" --request POST --data @input_test.json https://lasso-reg-model.herokuapp.com/v1/predict/regression
