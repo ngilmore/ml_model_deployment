@@ -82,7 +82,7 @@ jobs:
             . venv/bin/activate
             chmod +x ./scripts/publish_model.sh
             ./scripts/publish_model.sh ./packages/regression_model/
-  differential_tests:
+  test_model_differentials:
     <<: *defaults
     steps:
       - checkout
@@ -133,12 +133,12 @@ workflows:
     jobs:
       - test_regression_model
       - test_ml_api
-      - differential_tests
+      - test_model_differentials
       - train_and_upload_regression_model:
           requires:
             - test_regression_model
             - test_ml_api
-            - differential_tests
+            - test_model_differentials
           filters:
             branches:
               only:
