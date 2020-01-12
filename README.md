@@ -31,8 +31,11 @@ Goal of this project is to predict the sale prices of houses based on key featur
 
 #### 1.2. Process
 
+- Set up GitHub repo for source code control (this repo).
 - Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
-- Development of deployable/scaleable model then moved to .py (VS Code) files. Wrapped model in a Flask application with testing, versioning, and packaging for deployment and re-use. Added CI/CD through the inclusion of GitHub (source code control), GemFury (packaging), and Circleci (automated testing and deployment).
+- Moved to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
+- Wrapped model in a Flask application with testing, versioning, and packaging for deployment and re-use.
+- Added CI/CD through the inclusion of GemFury (ML model packaging), and Circleci (automated testing and deployment).
 - Deployed to Production on [Heroku](https://lasso-reg-model.herokuapp.com/version) (PaaS) without containers automatically once CI/CD pipeline runs successfully.
 - Dockerized the model and app for deployment to Production.
   - TODO: Deploy model as Docker container to Heroku - requires a plan upgrade on Heroku to allow for Docker Layer caching.
@@ -50,7 +53,11 @@ Goal of the project is to correctly identify the weed type from a variety of wee
 
 #### 2.2. Process
 
-- TODO: Build and deploy this model.
+- TODO: Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
+- TODO: Move to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
+- TODO: Wrap model in a Flask application with testing, versioning, and packaging for deployment and re-use.
+- TODO: Add CI/CD through the inclusion of GemFury (ML model packaging), and Circleci (automated testing and deployment).
+- TODO: Deploy to Production
 
 ## Machine Learning Pipeline: Overview
 
