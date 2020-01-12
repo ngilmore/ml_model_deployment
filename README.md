@@ -25,9 +25,7 @@ Goal of this project is to predict the sale prices of houses based on key featur
 
 #### 1.1. Prerequisites
 
-```{}
 - Dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
-```
 
 #### 1.2. Process
 
@@ -47,9 +45,7 @@ Goal of the project is to correctly identify the weed type from a variety of wee
 
 #### 2.1. Prerequisites
 
-```{}
 - Dataset from [Kaggle](https://www.kaggle.com/vbookshelf/v2-plant-seedlings-dataset)
-```
 
 #### 2.2. Process
 
