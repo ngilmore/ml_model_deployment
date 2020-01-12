@@ -1,6 +1,6 @@
 # Deploying Machine Learning Models
 
-Repo of repeatable ML model pipeline development and deployment.
+Repo of repeatable ML model pipeline from development through to deployment.
 
 [![made-with-python](https://img.shields.io/badge/Built%20with-Python-1f425f.svg)](https://www.python.org/)
 [![made-with-sklearn](https://img.shields.io/badge/Built%20with-sklearn-1f425f.svg)](https://www.python.org/)
