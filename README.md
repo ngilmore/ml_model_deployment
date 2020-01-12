@@ -49,7 +49,7 @@ Goal of the project is to correctly identify the weed type from a variety of wee
 
 #### 2.2. Process
 
-- [ ] TODO: Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
+- [x] Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
 - [ ] TODO: Move to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
 - [ ] TODO: Wrap model in a Flask application with testing, versioning, and packaging for deployment and re-use.
 - [ ] TODO: Add CI/CD through the inclusion of GemFury (ML model packaging), and Circleci (automated testing and deployment).
