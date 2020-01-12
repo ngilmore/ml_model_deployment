@@ -41,7 +41,7 @@ Goal of this project is to predict the sale prices of houses based on key featur
   
 ### 2. Differentiate weeds from crop seedlings using a convolutional neural network (CNN)
 
-Goal of the project is to correctly identify the weed type from a variety of weed and crop RGB images using a rather big dataset (2GB).
+Goal of the project is to correctly identify the weed type from a variety of weed and crop RGB images using a relatively big dataset (~2GB).
 
 #### 2.1. Prerequisites
 
