@@ -33,11 +33,11 @@ Goal of this project is to predict the sale prices of houses based on key featur
 
 - Set up GitHub repo for source code control (this repo).
 - Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
-- Moved to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
-- Wrapped model in a Flask application with testing, versioning, and packaging for deployment and re-use.
-- Added CI/CD through the inclusion of GemFury (ML model packaging), and Circleci (automated testing and deployment).
-- Deployed to Production on [Heroku](https://lasso-reg-model.herokuapp.com/version) (PaaS) without containers automatically once CI/CD pipeline runs successfully.
-- Dockerized the model and app for deployment to Production.
+- Move to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
+- Wrapp model in a Flask application with testing, versioning, and packaging for deployment and re-use.
+- Add CI/CD through the inclusion of GemFury (ML model packaging), and Circleci (automated testing and deployment).
+- Deploy to Production on [Heroku](https://lasso-reg-model.herokuapp.com/version) (PaaS) without containers automatically once CI/CD pipeline runs successfully.
+- Dockerize the model and app for deployment to Production.
   - TODO: Deploy model as Docker container to Heroku - requires a plan upgrade on Heroku to allow for Docker Layer caching.
   - TODO: Deploy model as Docker container to AWS (IaaS).
   
