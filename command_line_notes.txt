@@ -59,3 +59,7 @@ $ docker
 
 # build Docker container
 $ docker build --build-arg PIP_EXTRA_INDEX_URL=${PIP_EXTRA_INDEX_URL} -t ml_api:latest .
+
+# neural_network_model
+# install regression model requirements.txt
+$ pip install -r packages/neural_network_model/requirements.txt
