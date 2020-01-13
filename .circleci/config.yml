@@ -175,24 +175,28 @@ workflows:
     jobs:
       - test_regression_model
       - test_ml_api
-      - test_model_differentials
-      - train_and_upload_regression_model:
-          requires:
-            - test_regression_model
-            - test_ml_api
-            - test_model_differentials
-          filters:
-            branches:
-              only:
-                - master
-      - deploy_to_heroku:
+      - train_and_upload_regression_model
+      - test_ml_api:
           requires:
             - train_and_upload_regression_model
-          filters:
-            branches:
-              only:
-                - master
-      # - build_and_push_to_heroku_docker:
+      #- test_model_differentials
+      #- train_and_upload_regression_model:
+      #    requires:
+      #      - test_regression_model
+      #      - test_ml_api
+      #      - test_model_differentials
+      #    filters:
+      #      branches:
+      #        only:
+      #          - master
+      #- deploy_to_heroku:
+      #    requires:
+      #      - train_and_upload_regression_model
+      #    filters:
+      #      branches:
+      #        only:
+      #          - master
+      ## - build_and_push_to_heroku_docker:
       #     requires:
       #       - train_and_upload_regression_model
       #     filters:
