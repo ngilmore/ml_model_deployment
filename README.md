@@ -20,6 +20,7 @@ Repo of repeatable ML model pipeline from development through to deployment.
 ## Projects
 
 1. [Predict the sale price of houses using Lasso regression](https://github.com/ngilmore/ml_model_deployment#1-predict-the-sale-price-of-houses-using-lasso-regression)
+2. [Differentiate weeds from crop seedlings using a convolutional neural network (CNN)](https://github.com/ngilmore/ml_model_deployment#2-differentiate-weeds-from-crop-seedlings-using-a-convolutional-neural-network-cnn)
 
 ## Machine Learning Pipeline: Overview
 
