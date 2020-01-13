@@ -58,6 +58,12 @@ Tree-based ML models insensitive to feature scales:
 - Random Forests
 - Gradient Boosted Trees
 
+## Feature Engineering: Overview
+
+## Feature Selection: Overview
+
+## Project Details
+
 ### 1. Predict the sale price of houses using Lasso regression
 
 Goal of this project is to predict the sale prices of houses based on key features related to the property.
