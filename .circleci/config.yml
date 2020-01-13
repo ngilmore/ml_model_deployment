@@ -49,7 +49,7 @@ jobs:
           keys:
             - py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
       - run:
-          name: Run tests
+          name: Runnning tests
           command: |
             python3 -m venv venv
             . venv/bin/activate
@@ -175,30 +175,30 @@ workflows:
     jobs:
       - test_regression_model
       - test_ml_api
-      # - test_model_differentials
+      - test_model_differentials
       - train_and_upload_regression_model:
           requires:
             - test_regression_model
             - test_ml_api
-          # - test_model_differentials
+            - test_model_differentials
           filters:
             branches:
               only:
                 - master
-      # - deploy_to_heroku:
-      #     requires:
-      #       - train_and_upload_regression_model
-      #     filters:
-      #       branches:
-      #         only:
-      #           - master
-      - build_and_push_to_heroku_docker:
+      - deploy_to_heroku:
           requires:
             - train_and_upload_regression_model
           filters:
             branches:
               only:
                 - master
+      # - build_and_push_to_heroku_docker:
+      #     requires:
+      #       - train_and_upload_regression_model
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
       # - publish_docker_image_to_aws:
       #     requires:
       #       - train_and_upload_regression_model
@@ -206,13 +206,13 @@ workflows:
       #       branches:
       #         only:
       #           - master
-      ## - train_and_upload_neural_network_model:
+      # - train_and_upload_neural_network_model:
       #    requires:
-      #      - test_regression_model
-      #      - test_ml_api
-      #      - test_model_differentials
-      #      # - train_and_upload_regression_model
-      #    # filters:
-      #    #   branches:
-      #    #     only:
-      #    #       - master
+      #       - test_regression_model
+      #       - test_ml_api
+      #       - differential_tests
+      #       # - train_and_upload_regression_model
+      #     # filters:
+      #     #   branches:
+      #     #     only:
+      #     #       - master
