@@ -18,42 +18,7 @@ Repo of repeatable ML model pipeline from development through to deployment.
 [![Heroku App Status](https://heroku-shields.herokuapp.com/lasso-reg-model)](https://lasso-reg-model.herokuapp.com/version)
 
 ## Projects
-
-### 1. Predict the sale price of houses using Lasso regression
-
-Goal of this project is to predict the sale prices of houses based on key features related to the property.
-
-#### 1.1. Prerequisites
-
-- Dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
-
-#### 1.2. Process
-
-- [x] Set up GitHub repo for source code control (this repo).
-- [x] Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
-- [x] Move to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
-- [x] Wrap model in a Flask application with testing, versioning, and packaging for deployment and re-use.
-- [x] Add CI/CD through the inclusion of GemFury (ML model packaging), and Circleci (automated testing and deployment).
-- [x] Deploy to Production on [Heroku](https://lasso-reg-model.herokuapp.com/version) (PaaS) without containers automatically once CI/CD pipeline runs successfully.
-- [x] Dockerize the model and app for deployment to Production.
-  - [ ] TODO: Deploy model as Docker container to Heroku - requires a plan upgrade on Heroku to allow for Docker Layer caching.
-  - [ ] TODO: Deploy model as Docker container to AWS (IaaS).
-  
-### 2. Differentiate weeds from crop seedlings using a convolutional neural network (CNN)
-
-Goal of this project is to correctly identify the weed type from a variety of weed and crop RGB images using a relatively big dataset (~2GB).
-
-#### 2.1. Prerequisites
-
-- Dataset from [Kaggle](https://www.kaggle.com/vbookshelf/v2-plant-seedlings-dataset)
-
-#### 2.2. Process
-
-- [x] Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
-- [ ] TODO: Move to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
-- [ ] TODO: Leverage the same Flask application created for Project #1 for testing, versioning, and packaging for deployment and re-use.
-- [ ] TODO: Leverage the same CI/CD pipeline created for Project # 1 for version control, automated ML model packaging, and automated testing and deployment.
-- [ ] TODO: Deploy to Production.
+1. [Predict the sale price of houses using Lasso regression](https://github.com/ngilmore/ml_model_deployment#1-predict-the-sale-price-of-houses-using-lasso-regression)
 
 ## Machine Learning Pipeline: Overview
 
@@ -90,3 +55,39 @@ Tree-based ML models insensitive to feature scales:
 - Classification & Regression Trees
 - Random Forests
 - Gradient Boosted Trees
+
+### 1. Predict the sale price of houses using Lasso regression
+
+Goal of this project is to predict the sale prices of houses based on key features related to the property.
+
+#### 1.1. Prerequisites
+
+- Dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
+
+#### 1.2. Process
+
+- [x] Set up GitHub repo for source code control (this repo).
+- [x] Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
+- [x] Move to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
+- [x] Wrap model in a Flask application with testing, versioning, and packaging for deployment and re-use.
+- [x] Add CI/CD through the inclusion of GemFury (ML model packaging), and Circleci (automated testing and deployment).
+- [x] Deploy to Production on [Heroku](https://lasso-reg-model.herokuapp.com/version) (PaaS) without containers automatically once CI/CD pipeline runs successfully.
+- [x] Dockerize the model and app for deployment to Production.
+  - [ ] TODO: Deploy model as Docker container to Heroku - requires a plan upgrade on Heroku to allow for Docker Layer caching.
+  - [ ] TODO: Deploy model as Docker container to AWS (IaaS).
+  
+### 2. Differentiate weeds from crop seedlings using a convolutional neural network (CNN)
+
+Goal of this project is to correctly identify the weed type from a variety of weed and crop RGB images using a relatively big dataset (~2GB).
+
+#### 2.1. Prerequisites
+
+- Dataset from [Kaggle](https://www.kaggle.com/vbookshelf/v2-plant-seedlings-dataset)
+
+#### 2.2. Process
+
+- [x] Initial data gathering/analysis, feature engineering/selection, model building/evaluation done locally in Jupyter notebooks.
+- [ ] TODO: Move to IDE (VS Code) to convert the logic in the notebooks to a deployable/scaleable model using .py files.
+- [ ] TODO: Leverage the same Flask application created for Project #1 for testing, versioning, and packaging for deployment and re-use.
+- [ ] TODO: Leverage the same CI/CD pipeline created for Project # 1 for version control, automated ML model packaging, and automated testing and deployment.
+- [ ] TODO: Deploy to Production.
