@@ -18,6 +18,7 @@ Repo of repeatable ML model pipeline from development through to deployment.
 [![Heroku App Status](https://heroku-shields.herokuapp.com/lasso-reg-model)](https://lasso-reg-model.herokuapp.com/version)
 
 ## Projects
+
 1. [Predict the sale price of houses using Lasso regression](https://github.com/ngilmore/ml_model_deployment#1-predict-the-sale-price-of-houses-using-lasso-regression)
 
 ## Machine Learning Pipeline: Overview
