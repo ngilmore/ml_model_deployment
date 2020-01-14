@@ -64,7 +64,7 @@ Tree-based ML models insensitive to feature scales:
 
 ## Feature Selection: Overview
 
-- [ ] TODO - Add add content
+- [ ] TODO - Add content
 
 ## Project Details
 
